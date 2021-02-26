@@ -1,0 +1,30 @@
+{
+  "name": "react-codepen-box",
+  "version": "0.1.0",
+  "description": "A react component to embed codepen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leedom92/react-codepen.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "codepen",
+    "embed"
+  ],
+  "author": "Leedom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leedom92/react-codepen/issues"
+  },
+  "homepage": "https://github.com/leedom92/react-codepen#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1"
+  }
+}
