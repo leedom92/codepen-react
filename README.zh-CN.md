@@ -2,6 +2,7 @@
 
 > 嵌入[codepen](http://codepen.io)的React组件
 
+简体中文 | [English](./README.md)
 
 ## 安装
 

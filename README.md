@@ -2,6 +2,7 @@
 
 > A react component to embed [codepen](http://codepen.io)
 
+English | [简体中文](./README.zh-CN.md)
 
 ## Getting Started
 
