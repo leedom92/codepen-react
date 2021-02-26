@@ -1,4 +1,4 @@
-# &lt;Codepen /&gt;
+# &lt;CodePen /&gt;
 
 > 嵌入[codepen](http://codepen.io)的React组件
 

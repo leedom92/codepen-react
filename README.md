@@ -1,4 +1,4 @@
-# &lt;Codepen /&gt;
+# &lt;CodePen /&gt;
 
 > A react component to embed [codepen](http://codepen.io)
 
