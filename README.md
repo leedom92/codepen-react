@@ -9,7 +9,6 @@ English | [简体中文](./README.zh-CN.md)
 - `npm install --save react-codepen-box`
 - `npm install --save prop-types`
 
-
 ## Usage
 
 ```js
@@ -28,9 +27,7 @@ export default class CodeBox extends React.Component {
 }
 ```
 
-
 ## Options
-
 
 Property | Type     | Argument     | Values                   | Default   | Description
 ---------|----------|--------------|--------------------------|-----------|------------

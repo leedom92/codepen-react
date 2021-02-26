@@ -9,7 +9,6 @@
 - `npm install --save react-codepen-box`
 - `npm install --save prop-types`
 
-
 ## 使用
 
 ```js
@@ -28,9 +27,7 @@ export default class CodeBox extends React.Component {
 }
 ```
 
-
 ## 属性
-
 
 属性      |  类型    | 类别    | 可选值                   | 默认值     | 说明
 ---------|----------|--------|-------------------------|-----------|------------
