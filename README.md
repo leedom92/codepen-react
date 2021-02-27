@@ -38,8 +38,8 @@ export default class CodeBox extends React.Component {
 
 Property | Type     | Argument     | Values                   | Default   | Description
 ---------|----------|--------------|--------------------------|-----------|------------
-type     | `string` | `<optional>` | `iframe, embed`          | `iframe`  | the type of the pen.
-user     | `string` | `<required>` |                          | `null`    | [codepen.io](http://codepen.io) username.
+type     | `string` | `<optional>` | `iframe, embed`          | `iframe`  | the type of the [codepen](http://codepen.io).
+user     | `string` | `<required>` |                          | `null`    | codepen username.
 hash     | `string` | `<required>` |                          | `null`    | the hash id of the pen to display.
 width    | `string` | `<optional>` | `'', %`                  | `100%`    | the width of the pen.
 height   | `string` | `<optional>` | `'', %`                  | `400`     | the height of the pen.
