@@ -8,8 +8,8 @@
 
 ```bash
 # NPM
-$ npm install --save react-codepen-box
-$ npm install --save prop-types
+$ npm install react-codepen-box -S
+$ npm install prop-types -S
 
 # Yarn
 $ yarn add react-codepen-box

@@ -42,7 +42,7 @@ class CodePen extends React.Component {
           loading="lazy"
           allowtransparency="true"
         >
-          See the Pen <a href={PenLink}>{this.props.title || ''}</a> by Leedom (<a href={UserLink}>@{this.props.user}</a>) on <a href='https://codepen.io'>CodePen</a>.
+          See the Pen <a href={PenLink}>{this.props.title || ''}</a> by {this.props.user} (<a href={UserLink}>@{this.props.user}</a>) on <a href='https://codepen.io'>CodePen</a>.
         </iframe>
       )
     }
@@ -58,7 +58,7 @@ class CodePen extends React.Component {
         data-editable={this.props.editable}
         style={{ width: this.props.width }}
       >
-        See the Pen <a href={PenLink}>{this.props.title || ''}</a> by Leedom (<a href={UserLink}>@{this.props.user}</a>) on <a href='https://codepen.io'>CodePen</a>.
+        See the Pen <a href={PenLink}>{this.props.title || ''}</a> by {this.props.user} (<a href={UserLink}>@{this.props.user}</a>) on <a href='https://codepen.io'>CodePen</a>.
       </p>
     )
   }
