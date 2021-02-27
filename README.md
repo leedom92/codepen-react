@@ -6,8 +6,15 @@ English | [简体中文](./README.zh-CN.md)
 
 ## Getting Started
 
-- `npm install --save react-codepen-box`
-- `npm install --save prop-types`
+```bash
+# NPM
+$ npm install --save react-codepen-box
+$ npm install --save prop-types
+
+# Yarn
+$ yarn add react-codepen-box
+$ yarn add prop-types
+```
 
 ## Usage
 

@@ -6,8 +6,15 @@
 
 ## 安装
 
-- `npm install --save react-codepen-box`
-- `npm install --save prop-types`
+```bash
+# NPM
+$ npm install --save react-codepen-box
+$ npm install --save prop-types
+
+# Yarn
+$ yarn add react-codepen-box
+$ yarn add prop-types
+```
 
 ## 使用
 
