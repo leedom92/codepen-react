@@ -1,5 +1,5 @@
 {
-  "name": "react-codepen-box",
+  "name": "codepen-react",
   "version": "1.0.0",
   "description": "A react component to embed codepen",
   "main": "lib/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leedom92/react-codepen-box.git"
+    "url": "git+https://github.com/leedom92/codepen-react.git"
   },
   "keywords": [
     "react",
@@ -20,9 +20,9 @@
   "author": "Leedom",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leedom92/react-codepen-box/issues"
+    "url": "https://github.com/leedom92/codepen-react/issues"
   },
-  "homepage": "https://github.com/leedom92/react-codepen-box#readme",
+  "homepage": "https://github.com/leedom92/codepen-react#readme",
   "dependencies": {
     "prop-types": "^15.7.2"
   },

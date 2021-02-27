@@ -8,19 +8,17 @@
 
 ```bash
 # NPM
-$ npm install react-codepen-box -S
-$ npm install prop-types -S
+$ npm install codepen-react -S
 
 # Yarn
-$ yarn add react-codepen-box
-$ yarn add prop-types
+$ yarn add codepen-react
 ```
 
 ## 使用
 
 ```js
 import React from 'react'
-import CodePen from 'react-codepen-box'
+import CodePen from 'codepen-react'
 
 export default class CodeBox extends React.Component {
   render() {
