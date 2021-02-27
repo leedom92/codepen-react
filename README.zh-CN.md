@@ -49,5 +49,5 @@ editable | `bool`   | `可选` | `true, false`            | `true`    | 是否�
 tab      | `string` | `可选` | `html, css, js, result`  | `result`  | 默认显示面板
 
 ## License
-Copyright (c) 2021 [Leedom](https://github.com/leedom92)  
+Copyright (c) 2021 [Leedom](https://github.com/leedom92)
 Licensed under the MIT license.
