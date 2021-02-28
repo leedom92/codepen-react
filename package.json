@@ -1,6 +1,6 @@
 {
   "name": "codepen-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react component to embed codepen",
   "main": "lib/index.js",
   "scripts": {

@@ -42,8 +42,9 @@ hash     | `string` | `<required>` |                          | `null`    | the 
 width    | `string` | `<optional>` | `'', %`                  | `100%`    | the width of the pen.
 height   | `string` | `<optional>` | `'', %`                  | `400`     | the height of the pen.
 title    | `string` | `<optional>` |                          | `''`      | the title of the pen.
-theme    | `string` | `<optional>` |  `light, dark`           | `light`   | the theme the pen should use.
+theme    | `string` | `<optional>` | `light, dark`            | `light`   | the theme the pen should use.
 editable | `bool`   | `<optional>` | `true, false`            | `true`    | the editable of the pen.
+preview  | `bool`   | `<optional>` | `true, false`            | `false`   | the preview of the pen. u must run pen manually.
 tab      | `string` | `<optional>` | `html, css, js, result`  | `result`  | the default tab that should be displayed.
 
 ## License

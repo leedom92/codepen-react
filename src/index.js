@@ -1,6 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+/*!
+ * codepen-react v1.0.1
+ * (c) 2021 Leedom
+ * Released under the MIT License.
+ */
 class CodePen extends React.Component {
   constructor(props) {
     super(props)
@@ -25,7 +30,7 @@ class CodePen extends React.Component {
 
   render() {
     const UserLink = `https://codepen.io/${this.props.user}`
-    const CodeSrc = `https://codepen.io/${this.props.user}/embed/${this.props.hash}?theme-id=${this.props.theme}&editable=${this.props.editable}&height=${this.props.height}&default-tab=${this.props.tab}&user=${this.props.user}&slug-hash=${this.props.hash}&pen-title=${this.props.title || ''}`
+    const CodeSrc = `https://codepen.io/${this.props.user}/embed/${this.props.preview ? 'preview/' : ''}${this.props.hash}?theme-id=${this.props.theme}&editable=${this.props.editable}&height=${this.props.height}&default-tab=${this.props.tab}&user=${this.props.user}&slug-hash=${this.props.hash}&pen-title=${this.props.title || ''}`
     const PenLink = `${UserLink}/pen/${this.props.hash}`
 
     if (this.props.type === 'iframe') {
@@ -56,6 +61,7 @@ class CodePen extends React.Component {
         data-user={this.props.user}
         data-slug-hash={this.props.hash}
         data-editable={this.props.editable}
+        data-preview={this.props.preview}
         style={{ width: this.props.width }}
       >
         See the Pen <a href={PenLink}>{this.props.title || ''}</a> by {this.props.user} (<a href={UserLink}>@{this.props.user}</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -73,6 +79,7 @@ CodePen.propTypes = {
   title: PropTypes.string,
   theme: PropTypes.string,
   editable: PropTypes.bool,
+  preview: PropTypes.bool,
   tab: PropTypes.oneOf(['html,result', 'css,result', 'js,result', 'result'])
 }
 
@@ -82,6 +89,7 @@ CodePen.defaultProps = {
   height: '400',
   theme: 'light', 
   editable: true,
+  preview: false,
   tab: 'result'
 }
 

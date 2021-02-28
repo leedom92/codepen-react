@@ -34,7 +34,7 @@ export default class CodeBox extends React.Component {
 
 ## 属性
 
-属性      |  类型    | 类别    | 可选值                   | 默认值     | 说明
+属性      |  类型    | 类别    | 参数值                   | 默认值     | 说明
 ---------|----------|--------|-------------------------|-----------|------------
 type     | `string` | `可选` | `iframe, embed`          | `iframe`  | [codepen](http://codepen.io)的类型
 user     | `string` | `必须` |                          | `null`    | codepen的用户名
@@ -42,8 +42,9 @@ hash     | `string` | `必须` |                          | `null`    | codepen�
 width    | `string` | `可选` | `'', %`                  | `100%`    | 宽度
 height   | `string` | `可选` | `'', %`                  | `400`     | 高度
 title    | `string` | `可选` |                          | `''`      | codepen的名称
-theme    | `string` | `可选` |  `light, dark`           | `light`   | 主题
+theme    | `string` | `可选` | `light, dark`            | `light`   | 主题
 editable | `bool`   | `可选` | `true, false`            | `true`    | 是否可编辑
+preview  | `bool`   | `可选` | `true, false`            | `false`   | 是否显示预览，需手动开启codepen
 tab      | `string` | `可选` | `html, css, js, result`  | `result`  | 默认显示面板
 
 ## License
