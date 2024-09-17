@@ -1,11 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-/*!
- * codepen-react v1.0.1
- * (c) 2021 Leedom
- * Released under the MIT License.
- */
 class CodePen extends React.Component {
   constructor(props) {
     super(props)
@@ -42,8 +37,6 @@ class CodePen extends React.Component {
           title={this.props.title || ''}
           src={CodeSrc}
           allowFullScreen={true}
-          scrolling="no"
-          frameBorder="no"
           loading="lazy"
           allowtransparency="true"
         >
