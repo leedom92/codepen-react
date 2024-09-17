@@ -24,23 +24,34 @@ class CodePen extends React.Component {
   }
 
   render() {
-    const UserLink = `https://codepen.io/${this.props.user}`
-    const CodeSrc = `https://codepen.io/${this.props.user}/embed/${this.props.preview ? 'preview/' : ''}${this.props.hash}?theme-id=${this.props.theme}&editable=${this.props.editable}&height=${this.props.height}&default-tab=${this.props.tab}&user=${this.props.user}&slug-hash=${this.props.hash}&pen-title=${this.props.title || ''}`
-    const PenLink = `${UserLink}/pen/${this.props.hash}`
+    const {
+      user,
+      hash,
+      width,
+      height,
+      title,
+      theme,
+      editable,
+      preview,
+      tab
+    } = this.props
+    const UserLink = `https://codepen.io/${user}`
+    const CodeSrc = `https://codepen.io/${user}/embed/${preview ? 'preview/' : ''}${hash}?theme-id=${theme}&editable=${editable}&height=${height}&default-tab=${tab}&user=${user}&slug-hash=${hash}&pen-title=${title || ''}`
+    const PenLink = `${UserLink}/pen/${hash}`
 
-    if (this.props.type === 'iframe') {
+    if (type === 'iframe') {
       return (
         <iframe
-          width={this.props.width}
-          height={this.props.height}
-          style={{ width: this.props.width, height: this.props.height }}
-          title={this.props.title || ''}
+          width={width}
+          height={height}
+          style={{ width: width, height: height }}
+          title={title || ''}
           src={CodeSrc}
           allowFullScreen={true}
           loading="lazy"
           allowtransparency="true"
         >
-          See the Pen <a href={PenLink}>{this.props.title || ''}</a> by {this.props.user} (<a href={UserLink}>@{this.props.user}</a>) on <a href='https://codepen.io'>CodePen</a>.
+          See the Pen <a href={PenLink}>{title || ''}</a> by {user} (<a href={UserLink}>@{user}</a>) on <a href='https://codepen.io'>CodePen</a>.
         </iframe>
       )
     }
@@ -48,16 +59,16 @@ class CodePen extends React.Component {
     return (
       <p
         className="codepen"
-        data-height={this.props.height}
-        data-theme-id={this.props.theme}
-        data-default-tab={this.props.tab}
-        data-user={this.props.user}
-        data-slug-hash={this.props.hash}
-        data-editable={this.props.editable}
-        data-preview={this.props.preview}
-        style={{ width: this.props.width }}
+        data-height={height}
+        data-theme-id={theme}
+        data-default-tab={tab}
+        data-user={user}
+        data-slug-hash={hash}
+        data-editable={editable}
+        data-preview={preview}
+        style={{ width }}
       >
-        See the Pen <a href={PenLink}>{this.props.title || ''}</a> by {this.props.user} (<a href={UserLink}>@{this.props.user}</a>) on <a href='https://codepen.io'>CodePen</a>.
+        See the Pen <a href={PenLink}>{title || ''}</a> by {user} (<a href={UserLink}>@{user}</a>) on <a href='https://codepen.io'>CodePen</a>.
       </p>
     )
   }
