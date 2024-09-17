@@ -6,7 +6,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "pnpm build && bumpp && pnpm publish"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,9 @@
   "bugs": {
     "url": "https://github.com/leedom92/codepen-react/issues"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/leedom92/codepen-react#readme",
   "dependencies": {
     "prop-types": "^15.8.1"
@@ -30,9 +33,10 @@
   "devDependencies": {
     "@babel/cli": "^7.25.6",
     "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-react-jsx": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-react": "^7.24.7",
-    "@babel/plugin-transform-react-jsx": "^7.25.2",
+    "bumpp": "^9.5.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
