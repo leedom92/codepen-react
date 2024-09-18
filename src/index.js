@@ -25,6 +25,7 @@ class CodePen extends React.Component {
 
   render() {
     const {
+      type,
       user,
       hash,
       width,
@@ -44,7 +45,7 @@ class CodePen extends React.Component {
         <iframe
           width={width}
           height={height}
-          style={{ width: width, height: height }}
+          style={{ width, height }}
           title={title || ''}
           src={CodeSrc}
           allowFullScreen={true}

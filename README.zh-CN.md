@@ -12,6 +12,9 @@ $ npm install codepen-react -S
 
 # Yarn
 $ yarn add codepen-react
+
+# pnpm
+$ pnpm add codepen-react
 ```
 
 ## 使用
